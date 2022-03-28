@@ -5,8 +5,7 @@ ma page d'accueil !
   <div class="col">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">
-            <a href="/article?controlleur=article&id=<?= $article['id'] ?>"><?= $article['titre'] ?></a></h5>
+        <h5 class="card-title"><?= $article['titre'] ?></h5>
         <p class="card-text"><?= $article['description'] ?></p>
       </div>
     </div>

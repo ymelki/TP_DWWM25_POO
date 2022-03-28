@@ -6,6 +6,8 @@ class HomeController {
         // Afficher les articles
 
          // on recupere l'entité article
+         include __DIR__.'/../../src/Entity/Model.php';
+
         include __DIR__.'/../../src/Entity/Article.php';
         // on l'instancie
         $a=new Article();

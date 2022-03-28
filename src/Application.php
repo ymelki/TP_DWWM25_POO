@@ -29,6 +29,36 @@ class Application {
         $controller->index(); //Renvoyer la vue du formulaire de connexion
     }
  
+    else  if ($path=='/article'){
+
+        // on recupere le code du controlleur de la page d accueil
+        include __DIR__.'/../src/Controller/ArticleController.php';
+        // on l'instancie
+        $Acontroller=new ArticleController();
+        // on lance la méthode index du controlleur
+        $Acontroller->findone(); //Renvoyer la vue du formulaire de connexion
+    }
+
+    else  if ($path=='/inserer'){
+
+        // on recupere le code du controlleur de la page d accueil
+        include __DIR__.'/../src/Controller/ArticleController.php';
+        // on l'instancie
+        $Acontroller=new ArticleController();
+        // on lance la méthode index du controlleur
+        $Acontroller->inserer(); //Renvoyer la vue du formulaire de connexion
+    }
+
+    else  if ($path=='/insererarticle'){
+
+        // on recupere le code du controlleur de la page d accueil
+        include __DIR__.'/../src/Controller/ArticleController.php';
+        // on l'instancie
+        $Acontroller=new ArticleController();
+        // on lance la méthode index du controlleur
+        $Acontroller->insererarticle(); //Renvoyer la vue du formulaire de connexion
+    }
+ 
         
     }
 }
